@@ -67,7 +67,7 @@ public class MemberService {
         String nickname = (String) payload.get("nickname");
 
         System.out.println("tes");
-        
+
         Member member = new Member(id, username, nickname);
 
         return member;

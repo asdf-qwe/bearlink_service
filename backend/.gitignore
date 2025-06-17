@@ -36,9 +36,5 @@ out/
 ### VS Code ###
 .vscode/
 
-### Custom ###
-application-secret.yml
-
-db_dev.*
-
-apiV1.json
+### 설정 파일 (보안) ###
+src/main/resources/application-secret.yml

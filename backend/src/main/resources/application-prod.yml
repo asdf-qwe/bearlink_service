@@ -11,7 +11,7 @@ spring:
   redis:
     host: redis_1
     port: 6379
-    password: bearlink123
+
   jpa:
     hibernate:
       ddl-auto: update

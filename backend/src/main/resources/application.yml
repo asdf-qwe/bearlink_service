@@ -5,7 +5,7 @@ spring:
     ansi:
       enabled: ALWAYS
   profiles:
-    active: dev
+    active: prod
     include: secret
   datasource:
     url: jdbc:h2:./db_dev;MODE=MySQL
@@ -55,7 +55,7 @@ custom:
     frontUrl: "https://www.${custom.prod.cookieDomain}"
     backUrl: "https://api.${custom.prod.cookieDomain}"
   site:
-    name: "BLOG DEV"
-    cookieDomain: "${custom.dev.cookieDomain}"
-    frontUrl: "${custom.dev.frontUrl}"
-    backUrl: "${custom.dev.backUrl}"
+    name: "BLOG PROD"                                      # ✅ 이름도 prod로
+    cookieDomain: "${custom.prod.cookieDomain}"            # ✅ 참조도 prod로 변경
+    frontUrl: "${custom.prod.frontUrl}"
+    backUrl: "${custom.prod.backUrl}"

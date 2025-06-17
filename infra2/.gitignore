@@ -1,6 +1,0 @@
-.idea
-**/.terraform/
-**/*.tfstate
-**/*.tfstate.*
-**/.terraform.lock.hcl
-**/secrets.tf

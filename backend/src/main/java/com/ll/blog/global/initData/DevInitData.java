@@ -14,7 +14,7 @@ public class DevInitData {
     @Bean
     public ApplicationRunner applicationRunner() {
         return args -> {
-            Ut.file.downloadByHttp("http://localhost:8080/v3/api-docs/apiV1", ".");
+            Ut.file.downloadByHttp("http://localhost:8090/v3/api-docs/apiV1", ".");
 
             String cmd = "yes | npx --package typescript --package openapi-typescript openapi-typescript apiV1.json -o ../frontend/src/lib/backend/apiV1/schema.d.ts";
             Ut.cmd.runAsync(cmd);

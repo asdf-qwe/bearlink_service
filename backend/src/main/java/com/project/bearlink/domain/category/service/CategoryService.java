@@ -26,7 +26,7 @@ public class CategoryService {
     //기본 카테고리 생성
     public Category createCategory(CategoryRequest req, Long userId) {
         User user = userRepository.findById(userId)
-                .orElseThrow(() -> new IllegalArgumentException("해당 유저가 존재하지 않습니다."));
+                .orElseThrow(() -> new IllegalArgumentException("해당 유저가 존재하지 않습니다.r"));
 
         Category category = Category.builder()
                 .name(req.getName())

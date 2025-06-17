@@ -1,11 +1,11 @@
 server:
-  port: 8090
+  port: 8080
 spring:
   output:
     ansi:
       enabled: ALWAYS
   profiles:
-    active: prod
+    active: dev
     include: secret
   datasource:
     url: jdbc:h2:./db_dev;MODE=MySQL
@@ -55,7 +55,7 @@ custom:
     frontUrl: "https://www.${custom.prod.cookieDomain}"
     backUrl: "https://api.${custom.prod.cookieDomain}"
   site:
-    name: "BLOG PROD"                                      # ✅ 이름도 prod로
-    cookieDomain: "${custom.prod.cookieDomain}"            # ✅ 참조도 prod로 변경
-    frontUrl: "${custom.prod.frontUrl}"
-    backUrl: "${custom.prod.backUrl}"
+    name: "BLOG DEV"
+    cookieDomain: "${custom.dev.cookieDomain}"
+    frontUrl: "${custom.dev.frontUrl}"
+    backUrl: "${custom.dev.backUrl}"

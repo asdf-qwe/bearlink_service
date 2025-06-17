@@ -271,6 +271,7 @@ docker run -d \
   --network common \
   -p 6379:6379 \
   -e TZ=Asia/Seoul \
+  -v /dockerProjects/redis_1/volumes/data:/data \
   redis --requirepass ${var.password_1}
 
 # mysql 설치

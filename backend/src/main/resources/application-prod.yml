@@ -32,3 +32,9 @@ custom:
     backUrl: "${custom.prod.backUrl}"
   genFile:
     dirPath: /gen
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
